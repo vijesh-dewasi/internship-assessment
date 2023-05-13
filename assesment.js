@@ -1,17 +1,17 @@
 import express from 'express';
 import mongoose from 'mongoose';
 import product from './models/product.js'
-import dotenv from 'dotenv';
+// import dotenv from 'dotenv';
 import bodyparser from 'body-parser';
-dotenv.config();
+// dotenv.config();
 
 
 const app = express();
 app.use(bodyparser.urlencoded({ extended: true }))
 app.use(bodyparser.json())
 
-const mongoUserName = process.env.mongoUserName;
-const mongoPassword = process.env.mongoPassword;
+// const mongoUserName = process.env.mongoUserName;
+// const mongoPassword = process.env.mongoPassword;
 
 // const mongoUri= "mongodb+srv://"+mongoUserName+":" + mongoPassword +"@productsitecluster.hduf0ay.mongodb.net/forAssement?retryWrites=true"
 const mongoUri= "mongodb+srv://vijesh:Mohit%40123@productsitecluster.hduf0ay.mongodb.net/forAssement?retryWrites=true"
